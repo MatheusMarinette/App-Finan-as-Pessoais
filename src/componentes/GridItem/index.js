@@ -19,6 +19,7 @@ const GridItem = ({ item, onDelete }) => {
                 <FaRegArrowAltCircleDown color="red" />
             )}
         </C.Td>
+        <C.Td>{item.data}</C.Td>
         <C.Td alignCenter>
             <FaTrash onClick={() => onDelete(item.id)} />
         </C.Td>

@@ -8,6 +8,7 @@ import  { AuthProvider } from "./context/auth";
 
 
 
+
 const App = () => {
   const data = localStorage.getItem("transactions");
   const [transactionsList, setTransactionsList] = useState(
@@ -25,6 +26,7 @@ const App = () => {
     const amountExpense = transactionsList
     .filter((item) => !item.expense)
     .map((transaction) => Number(transaction.amount));
+
 
    
 
